@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:f="http://java.sun.com/jsf/core">
+	
+		<h:head>
+			
+		</h:head>
+		<h:body>
+			<h:form id="register">
+			
+			    <h:panelGrid>
+			    <f:event listener="#{message.validatePassword1}" type="postValidate" /> 
+				<h:outputLabel for="name" id="nameLabel" value="Enter ur name=>"></h:outputLabel>
+				<h:inputText id="name" value="#{message.name}" required="true" requiredMessage="Please Enter name"></h:inputText>
+				<h:message id="mess" for="name" style="color: red;" ></h:message>
+				
+				<h:outputLabel for="password" id="passwordLabel" value="Enter ur password=>"></h:outputLabel>
+				<h:inputText id="password" value="#{message.password}" required="true" requiredMessage="Please Enter password">
+				    
+				</h:inputText>
+				<h:message id="mess1" for="password" style="color: red;" ></h:message>
+			
+				
+			    <h:outputLabel for="confirmpassword" id="confirmpasswordLabel" value="Confirm ur password=>"></h:outputLabel>
+				<h:inputText id="confirmpassword" value="#{message.confirmpassword}"  required="true" requiredMessage="Please Enter Confirm Password"></h:inputText>
+				<h:message id="mess2" for="confirmpassword" style="color: red;" ></h:message>
+				
+				<h:outputLabel for="email" id="emailLabel" value="Mail"></h:outputLabel>
+				<h:inputText id="email" value="#{message.email}" required="true" label="Email" requiredMessage="#{message.email} is not valid">
+                 <f:validator validatorId="passwordValidator" />
+               </h:inputText>
+               <h:message id="mess3" for="email" style="color: red;" ></h:message>
+               
+               <h:outputLabel for="category" id="categoryLabel" value="Category"></h:outputLabel>
+               <h:selectOneMenu value="#{message.categoryValue}">
+   			       <f:selectItems itemLabel="#{message.categoryListLabel}" itemValue="#{message.categoryList}" />
+   		       </h:selectOneMenu>
+   		
+	        <br /><br />
+				
+				<h:commandButton id="button" action="#{message.validateUser}" value="Submit" ></h:commandButton>
+				
+				<!-- <h:message id="mess" for="name" ></h:message> -->
+				</h:panelGrid>
+				
+			</h:form>
+		</h:body>
+
+
+</html>

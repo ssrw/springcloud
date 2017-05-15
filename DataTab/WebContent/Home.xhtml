@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <script language="javascript">
+    function validate() {
+        var uname = document.getElementById("loginform:name");
+        if ( uname.value == "")
+        {
+            alert("Please enter username!");
+            return false;
+        }
+        var pwd = document.getElementById("loginform:roll");
+        if ( pwd.value == "")
+        {
+            alert("Please enter roll!");
+            return false;   
+        }
+        return true;
+    }
+</script>
+	<f:event listener="#{userData.handleEvent}" type="preRenderView" />
+</h:head>
+<h:body>
+	<f:view>
+		<h:form>
+			<table>
+				<tr>
+					<td><h:messages showDetail="true" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter name : " /></td>
+					<td><h:inputText value="#{userData.clientname}" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter Id : " /></td>
+					<td><h:inputText value="#{userData.id}" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><h:commandButton value="Insert" action="#{userData.add}" /></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>#{userData.data}</td>
+				</tr>
+				<tr>
+					<td><h:selectOneRadio value="#{authorData.favColor1}"
+							id="div2">
+							<f:selectItem itemValue="Red" itemLabel="Color1 - Red" />
+							<f:selectItem itemValue="Green" itemLabel="Color1 - Green" />
+							<f:ajax event="click" binding="valbinding" execute="@form"
+								render="div1" listener="#{authorData.setchangeval}" />
+						</h:selectOneRadio></td>
+				</tr>
+			</table>
+		
+
+		<h:panelGroup id="div1" style="display: #{authorData.valdisplay};">
+			<span> You have selected #{authorData.message} </span>
+		</h:panelGroup>
+
+</h:form>
+<h:form>
+		<br />
+		
+			<h:outputLabel
+				value="Choose your Car: *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+				for="firstdropdwn" />
+			<h:selectOneMenu id="firstdropdwn" value="#{authorData.favoriteCar2}">
+
+				<f:selectItems value="#{authorData.car4List}" var="d"
+					itemLabel="#{d.carlabel}" itemValue="#{d.carvalue}" />
+				<f:ajax event="click" binding="valbinding1"
+					execute="@this firstdropdwn" render="seconddrpdown"
+					listener="#{authorData.setDropDwnVal}" />
+
+			</h:selectOneMenu>
+			<br />
+
+			<h:outputLabel value="Choose your Owner: *&nbsp;&nbsp;&nbsp;"
+				for="seconddrpdown" />
+			<h:selectOneMenu id="seconddrpdown" value="">
+
+				<f:selectItems value="#{authorData.car3List}" var="c"
+					itemLabel="#{c.carlabel}" itemValue="#{c.carvalue}" />
+
+			</h:selectOneMenu>
+		</h:form>
+		
+		<h:form id="loginform" onclick="return validate()">
+		
+	
+				<table>
+				<tr>
+					<td><h:outputText value="Enter name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" /></td>
+					<td><h:inputText id="name" value="#{authorData.name}">
+				
+					</h:inputText></td>
+					
+				</tr>	
+				
+			
+				<tr>
+			    	<td><h:outputText id="preroll" value="Enter Roll number : " /></td>
+					<td><h:inputText id="roll" value="#{authorData.roll}">
+					</h:inputText></td>
+		
+				</tr>
+				
+			
+				<tr><td><h:commandButton value="Submit" action="#{authorData.submit}" /></td></tr>
+				
+   
+				</table>
+		
+		
+		</h:form>
+	</f:view>
+</h:body>
+</html>
