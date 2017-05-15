@@ -1,0 +1,51 @@
+package org.aife.messenger;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MessageService {
+	HashMap<Long,Message> mess = new HashMap<Long,Message>();
+	
+	
+	public MessageService(){
+		mess.put(3L,new Message(3L,"rihan"));
+	}
+
+    
+	
+	public void addMessage(Long id,String name){
+		mess.put(id, new Message(id,name));
+	}
+	
+	public Message retMessage(Long id){
+		return mess.get(id);
+	}
+	
+	public Message fetchData(Long id){
+		String strid=String.valueOf(id);
+		Message msg=new Message();
+		ResultSet rs = null;
+	      PreparedStatement pst = null;
+	      try { 
+	    	  
+	      Connection con = SetConnection.getConnection();
+	      String qry="select * from message where id='"+id+"'";
+		  pst=con.prepareStatement(qry);
+		  rs=pst.executeQuery();
+		  	while(rs.next()){
+	            msg.setId(rs.getLong(1));
+	            msg.setName(rs.getString(2));
+	            				
+		  	}
+	      } 
+	      catch (SQLException e) {
+	         e.printStackTrace();
+	      }
+	      return msg;
+	}
+	
+}

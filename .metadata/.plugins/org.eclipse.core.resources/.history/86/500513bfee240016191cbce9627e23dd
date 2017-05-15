@@ -1,0 +1,12 @@
+
+public class A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String arr[]=new String[5];
+		arr[0]="hello";
+		System.out.println(arr.length);
+
+	}
+
+}

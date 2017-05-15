@@ -1,0 +1,15 @@
+127.0.0.1 - - [21/Oct/2016:00:35:20 +0530] "GET /messenger/webapi/hello/fetchallmessage/hello HTTP/1.1" 200 25
+127.0.0.1 - - [21/Oct/2016:00:36:56 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello HTTP/1.1" 200 23
+127.0.0.1 - - [21/Oct/2016:00:37:04 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello HTTP/1.1" 200 23
+127.0.0.1 - - [21/Oct/2016:00:41:01 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello%20world HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:43:50 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello%20world HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:44:06 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello%20world HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:44:45 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello%20world HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:47:05 +0530] "GET /messenger/webapi/hello/fetchallmessage1/hello%20world HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:47:58 +0530] "GET /messenger/webapi/hello/fetchallmessage1/helloworld HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:00:48:13 +0530] "GET /messenger/webapi/hello/fetchallmessage1/helloworld HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:01:10:17 +0530] "GET /messenger/webapi/hello/fetchallmessage1/helloworld HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:01:10:22 +0530] "GET /messenger/webapi/hello/fetchallmessage1/helloworld HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:01:11:05 +0530] "GET /messenger/webapi/hello/fetchallmessage1/helloworld HTTP/1.1" 500 4274
+127.0.0.1 - - [21/Oct/2016:01:19:26 +0530] "POST /messenger/webapi/hello/fetchallmessage1/hello HTTP/1.1" 405 1056
+127.0.0.1 - - [21/Oct/2016:01:20:12 +0530] "POST /messenger/webapi/hello/fetchallmessage1/hello HTTP/1.1" 405 1056

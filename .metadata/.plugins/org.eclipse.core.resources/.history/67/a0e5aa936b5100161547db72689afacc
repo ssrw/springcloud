@@ -1,0 +1,60 @@
+package org.aife.messenger;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriInfo;
+
+@Path("/hello")
+public class MessageSender {
+	
+	MessageService n =new MessageService();
+/*	@GET
+	@Path("/{messageId}")
+	@Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+	public Message sendMessage(@PathParam("messageId") Long id){
+		return n.fetchData(id);
+	}*/
+	
+	@GET
+	@Path("/identity")
+	@Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+	public Response sendMessage1(@Context UriInfo info){
+		
+		String id = info.getQueryParameters().getFirst("employeeid");
+		Long id1=Long.valueOf(id);
+		String name=n.fetchData(id1).getName();
+		return Response
+				   .status(200)
+				   .entity(n.fetchData(id1)/*"Name of the emploee is :"+name*/).build();
+		
+		
+	}
+	
+	@POST
+	@Path("/insert/{messageId}/{attributeName}")
+	@Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+	public Response insertMessage(@PathParam("messageId") Long id , @PathParam("attributeName") String name){
+		
+		String id = info.getQueryParameters().getFirst("employeeid");
+		Long id1=Long.valueOf(id);
+		String name=n.fetchData(id1).getName();
+		return Response
+				   .status(200)
+				   .entity(n.fetchData(id1)/*"Name of the emploee is :"+name*/).build();
+		
+		
+	}
+	
+	
+}

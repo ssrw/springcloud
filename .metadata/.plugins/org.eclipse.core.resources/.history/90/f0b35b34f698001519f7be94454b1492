@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <%@ page import="java.sql.*"%>
+    <%!String name,email,telephone,message;%>
+    <%name=request.getParameter("name") ;%>
+    <%name=request.getParameter("email") ;%>
+    <%name=request.getParameter("telephone") ;%> 
+    <%name=request.getParameter("message") ;%>
+    <%!int i = 0;%>
+     <%
+	   PreparedStatement ps = null;
+	   Connection con = getConnection(); 
+	   try
+	   {
+	 
+	   String sql = "INSERT INTO client(name,id) VALUES(?,?)";
+	   ps= con.prepareStatement(sql); 
+	   ps.setString(1,clientname);
+	   ps.setString(2,id);
+	   i = ps.executeUpdate();
+	
+	   }
+	   catch(Exception e){
+		System.out.println(e.getMessage());   
+	   }
+	      
+	   
+	   
+    
+    %>
+
+</body>
+</html>
