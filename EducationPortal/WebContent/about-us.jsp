@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Student's Site | About Us</title>
+<title>Student's SITE | About Us</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
 <script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="j
+s/cufon-replace.js"></script>
 <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
 <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
@@ -49,7 +50,6 @@
         <li><span><a href="#">Programs</a></span></li>
         <li><span><a href="#">Student Info</a></span></li>
         <li><span><a href="#">Teachers</a></span></li>
-        <li><span><a href="#">Descriptions</a></span></li>
         <li><span><a href="#">Administrators</a></span></li>
         <li><span><a href="#">Basic Information</a></span></li>
         <li><span><a href="#">Vacancies</a></span></li>
@@ -65,49 +65,22 @@
         </fieldset>
       </form>
       <h2>Fresh <span>News</span></h2>
-      <ul class="news">
-        <li><strong>June 30, 2010</strong>
-          <h4><a href="#">Sed ut perspiciatis unde</a></h4>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </li>
-        <li><strong>June 14, 2010</strong>
-          <h4><a href="#">Neque porro quisquam est</a></h4>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur magni. </li>
-        <li><strong>May 29, 2010</strong>
-          <h4><a href="#">Minima veniam, quis nostrum</a></h4>
-          Uis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae. </li>
-      </ul>
+          <h4><a href="#"></a></h4>
     </aside>
     <section id="content">
       <div id="banner">
-        <h2>Professional <span>Online Education <span>Since 1992</span></span></h2>
+        <h2>Professional <span>Education <span>Since 2009</span></span></h2>
       </div>
       <div class="inside">
-        <h2>About <span>team</span></h2>
-        <ul class="list">
-          <li><img src="images/2page-img1.jpg">
-            <h4>Team Member One</h4>
-            <p>Eusus consequam vitae habitur amet nullam vitae condis phasellus sed justo. Orcivel mollis intesque eu.</p>
-          </li>
-          <li><img src="images/2page-img2.jpg">
-            <h4>Another Team Member </h4>
-            <p>Eusus consequam vitae habitur amet nullam vitae condis phasellus sed justo. Orcivel mollis intesque eu.</p>
-          </li>
-          <li class="last"><img src="images/2page-img3.jpg">
-            <h4>Another Team Member </h4>
-            <p>Eusus consequam vitae habitur amet nullam vitae condis phasellus sed justo. Orcivel mollis intesque eu.</p>
-          </li>
-        </ul>
-        <h2>About <span>Website</span></h2>
-        <div class="img-box"><img src="images/2page-img4.jpg"><span class="txt1">Nemo enim ipsam voluptatem</span> quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore aliquam. </div>
-        <p class="p0"><span class="txt1">Quis autem vel eum</span> iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptasaut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+        <h2>About <span>US</span></h2>
+        <div class="img-box"><img src="images/2page-img4.jpg"><span class="txt1"></span></div>
       </div>
     </section>
   </div>
 </div>
 <footer>
   <div class="footerlink">
-    <p class="lf">Copyright &copy; 2010 <a href="#">SiteName</a> - All Rights Reserved</p>
-    <p class="rf">Design by <a href="http://www.templatemonster.com/">TemplateMonster</a></p>
+    <p class="rf">Design by <a href=>Cazual</a></p>
     <div style="clear:both;"></div>
   </div>
 </footer>
@@ -115,3 +88,4 @@
 <!-- END PAGE SOURCE -->
 </body>
 </html>
+

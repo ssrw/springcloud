@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Sat Apr 22 22:02:49 IST 2017
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\SMALLTALK\\.m2\\repository\\org\\springframework\\spring-web\\4.3.3.RELEASE\\spring-web-4.3.3.RELEASE.jar=WEB-INF/lib/spring-web-4.3.3.RELEASE.jar
+#Thu May 25 23:30:40 IST 2017
+org.eclipse.jst.jee.server\:/binary\:D\:\\My\ Java\ Workspace\\JspSpring\\WebContent\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar=WEB-INF/lib/spring-web-4.2.4.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\My\ Java\ Workspace\\JspSpring\\WebContent\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.2.4.RELEASE-sources.jar

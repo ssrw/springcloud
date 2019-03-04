@@ -1,0 +1,5 @@
+127.0.0.1 - - [14/Apr/2018:21:00:01 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [14/Apr/2018:21:00:34 +0530] "GET /WebpageAutoFiller/ HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [14/Apr/2018:21:00:34 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [14/Apr/2018:21:05:57 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [14/Apr/2018:21:06:06 +0530] "GET /WebpageAutoFiller/autoFormFilling/www.wikipedia.org/emp123 HTTP/1.1" 500 5053

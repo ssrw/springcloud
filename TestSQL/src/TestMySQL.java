@@ -9,14 +9,14 @@ public class TestMySQL {
 		 ResultSet rs = null;
 	      PreparedStatement pst = null;
 	      Connection con = getConnection();
-	      String stm = "Select * from client";
+	      String stm = "Select * from employee";
 	      try {   
 	         pst = con.prepareStatement(stm);
 	         pst.execute();
 	         rs = pst.getResultSet();
 
 	         while(rs.next()){
-	            System.out.println(rs.getString(1));
+	            System.out.println(rs.getString(1)+rs.getString(2));
 	            				
 	         }
 	      } catch (SQLException e) {
@@ -38,9 +38,9 @@ public class TestMySQL {
 	   public static Connection getConnection(){
 		      Connection con = null;
 
-		      String url ="jdbc:mysql://localhost:3306/guesthouse";
+		      String url ="jdbc:mysql://localhost:3306/test";
 		      String user = "root";
-		      String password = "pwd";
+		      String password = "password";
 		      try {
 		    	 Class.forName("com.mysql.jdbc.Driver").newInstance();
 		         con = DriverManager.getConnection(url, user, password);

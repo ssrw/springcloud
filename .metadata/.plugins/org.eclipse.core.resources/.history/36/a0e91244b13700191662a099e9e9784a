@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+/**
+ * @author AIFE
+ *
+ */
+public class Taskthread extends Thread{
+	@Override
+	public void run(){
+		long startTime = System.currentTimeMillis();
+		for(int i=1 ;i<=10000000;i++){
+			System.out.println("Task is executing"+i);
+		}
+		long stopTime = System.currentTimeMillis();
+	    long elapsedTime = stopTime - startTime;
+	    System.out.println(elapsedTime);
+	}
+
+}

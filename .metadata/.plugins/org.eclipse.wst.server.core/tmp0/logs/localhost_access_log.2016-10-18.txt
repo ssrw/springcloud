@@ -1,5 +1,0 @@
-127.0.0.1 - - [18/Oct/2016:22:03:36 +0530] "GET / HTTP/1.1" 404 994
-0:0:0:0:0:0:0:1 - - [18/Oct/2016:22:04:27 +0530] "GET /messenger/index.jsp HTTP/1.1" 200 239
-0:0:0:0:0:0:0:1 - - [18/Oct/2016:22:04:28 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
-0:0:0:0:0:0:0:1 - - [18/Oct/2016:22:04:47 +0530] "GET /messenger/webapi/myresource HTTP/1.1" 200 7
-0:0:0:0:0:0:0:1 - - [18/Oct/2016:22:09:47 +0530] "GET /messenger/webapi/myresource HTTP/1.1" 200 7

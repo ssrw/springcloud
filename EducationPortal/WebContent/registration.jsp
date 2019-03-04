@@ -24,7 +24,7 @@
                     <a class="hiddenanchor" id="tologin"></a> 
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="" autocomplete="on"> 
+                            <form  method="post" action="/EducationPortal/PostLogin" autocomplete="on"> 
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > Your email or username </label>
@@ -49,24 +49,41 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="" autocomplete="on"> 
+                            <form   method="post" action="/EducationPortal/PostStudentRegistration"  autocomplete="on"> 
                                 <h1> Sign up </h1> 
                                 <p> 
-                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Student Name</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Student's Name" />
                                 </p>
-                                <p> 
-                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                 <p> 
+                                    <label for="studentcontactnumber"data-icon="u">Student Contact Number</label>
+                                    <input id="studentcontactnumber" name="studentcontactnumber" required="required" type="text" placeholder="Student's Contact Number" />
                                 </p>
-                                <p> 
-                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                 <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Student email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="student email id"/> 
                                 </p>
-                                <p> 
-                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                 <p> 
+                                    <label for="registrationnumber"data-icon="u">Student Registration Number</label>
+                                    <input id="registrationnumber" name="registrationnumber" required="required" type="text" placeholder="Student Registration Number" />
                                 </p>
+                                 <p> 
+                                    <label for="departmentname"data-icon="u">Department</label>
+                                    <input id="departmentname" name="departmentname" required="required" type="text" placeholder="Department Name" />
+                                </p>
+                                 <p> 
+                                    <label for="studentaddress"data-icon="u">Student Address</label>
+                                    <input id="studentaddress" name="studentaddress" required="required" type="text" placeholder="Student Address" />
+                                </p>                 
+                                 <p> 
+                                    <label for="gurdiansname" class="uname" data-icon="u">Guardian Name</label>
+                                    <input id="gurdiansname" name="gurdianname" required="required" type="text" placeholder="Guirdian's Name" />
+                                 </p>
+                                 <p> 
+                                    <label for="gurdiancontactnumber"data-icon="u">Gurdian Contact Number</label>
+                                    <input id="gurdiancontactnumber" name="gurdiancontactnumber" required="required" type="text" placeholder="Gurdian's Contact Number" />
+                                 </p>
                                 <p class="signin button"> 
 									<input type="submit" value="Sign up"/> 
 								</p>

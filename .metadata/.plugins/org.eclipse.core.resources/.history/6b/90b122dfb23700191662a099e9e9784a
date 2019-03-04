@@ -1,0 +1,45 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+
+/**
+ * 
+ */
+
+/**
+ * @author AIFE
+ *
+ */
+public class MainExecutor {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// Creates an ExecutorService that use a pool that creates threads on demand
+		// And that kill them after 60 seconds if they are not used
+		//ExecutorService onDemandExecutorService = Executors.newCachedThreadPool();
+		// Creates a single thread ScheduledExecutorService
+		//ScheduledExecutorService onDemandExecutorService = Executors.newSingleThreadScheduledExecutor();
+		// Creates an ExecutorService that use a pool of 10 threads
+		ExecutorService onDemandExecutorService = Executors.newFixedThreadPool(5);
+		
+		//ExecutorService onDemandExecutorService = Executors.newWorkStealingPool();
+		onDemandExecutorService.submit(new Taskthread());
+		/*onDemandExecutorService.submit(new Taskthread());
+		onDemandExecutorService.submit(new Taskthread());
+		onDemandExecutorService.submit(new Taskthread());
+		onDemandExecutorService.submit(new Taskthread());*/
+		// Will wait for myCommand1 and myCommand2 termination
+		onDemandExecutorService.shutdown();
+		/*long startTime = System.currentTimeMillis();
+		for(int i = 1;i<=5000000;i++){
+			System.out.println("Task is executing"+i);
+		}
+		long stopTime = System.currentTimeMillis();
+	    long elapsedTime = stopTime - startTime;
+	    System.out.println(elapsedTime);*/
+
+	}
+
+}

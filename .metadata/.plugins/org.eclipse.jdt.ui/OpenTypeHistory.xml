@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=JspREstClient/D:\/workspace\/JspREstClient\/WebContent\/WEB-INF\/lib\/tomcat-embed-core-8.0.30.jar&lt;org.apache.catalina.servlets(WebdavServlet.class[WebdavServlet" modifiers="33" timestamp="1483207150736"/>
-<typeInfo handle="=JspREstClient/D:\/workspace\/JspREstClient\/WebContent\/WEB-INF\/lib\/tomcat-embed-core-8.0.30.jar&lt;javax.servlet.http(HttpServlet.class[HttpServlet" modifiers="1057" timestamp="1483207150736"/>
+<typeInfo handle="=JspREstClient/D:\/My Java Workspace\/JspREstClient\/WebContent\/WEB-INF\/lib\/org.eclipse.persistence.core-2.5.0.jar&lt;org.eclipse.persistence.sessions.factories(SessionFactory.class[SessionFactory" modifiers="33" timestamp="1483207150614"/>
+<typeInfo handle="=JspREstClient/D:\/My Java Workspace\/JspREstClient\/WebContent\/WEB-INF\/lib\/jersey-guava-2.16.jar&lt;jersey.repackaged.com.google.common.cache(Striped64$Cell.class[Cell" modifiers="24" timestamp="1483207150488"/>
 </typeInfoHistroy>

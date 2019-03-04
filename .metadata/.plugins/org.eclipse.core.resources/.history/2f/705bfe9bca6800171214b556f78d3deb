@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portal For Staff</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png, footer, header nav ul li a, .nav-bg, .list li img');</script>
+<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #008cc4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+  
+  <div class="container">
+      
+      <nav>
+        <ul>
+          <li class="current"><a href="PostStaffRegistration.jsp" class="m1">Back Office</a></li>
+          <li><a href="about-us.jsp" class="m2">About Us</a></li>
+          <li><a href="articles.jsp" class="m3">Our Articles</a></li>
+          <li><a href="contact-us.jsp" class="m4">Contact Us</a></li>
+          <li class="last"><a href="sitemap.jsp" class="m5">Sitemap</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+   
+  </header> 
+   <div id="register" class="animate form">
+   <form   method="post" action="/EducationPortal/PostStaffRegistration"  autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <p> 
+                                    <label for="staffnamesignup" class="uname" data-icon="u">Staff Name</label>
+                                    <input id="staffnamesignup" name="staffnamesignup" required="required" type="text" placeholder="Staff's Name" />
+                                </p>
+                                 <p> 
+                                    <label for="staffcontactnumber"data-icon="u">Staff Contact Number</label>
+                                    <input id="staffcontactnumber" name="staffcontactnumber" required="required" type="text" placeholder="Staff's Contact Number" />
+                                </p>
+                                 <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" >Staff email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="staff email id"/> 
+                                </p>
+                                 <p> 
+                                    <label for="registrationnumber"data-icon="u">Staff Registration Number</label>
+                                    <input id="registrationnumber" name="registrationnumber" required="required" type="text" placeholder="Staff Registration Number" />
+                                </p>
+                                 <p> 
+                                   <label for="designation" data-icon="u">Staff Designation</label>
+		                           <select id="designation" name="designation">
+		                                <%@page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
+		                                <%@page import="dataAccessObject.*" %>
+		                                <%@page import="java.util.*" %>
+		                                <%!LinkedHashMap<String,String> map; %>
+		                                <%
+		                                  
+		                                   StudentDAO stDao = (StudentDAO) WebApplicationContextUtils.getWebApplicationContext(application).getBean("studentdao");
+		                                   map= stDao.getAllDesignationsForStaff();
+		                                %>
+		                                <% for(Map.Entry<String,String> hm:map.entrySet()){%>
+		                                 <option value="<%=hm.getValue()%>"><%=hm.getValue()%></option>
+		                                <%}%>
+		                                      
+		                                
+		                          </select>
+                                 </p>
+                                 <p> 
+                                    <label for="staffaddress"data-icon="u">Staff Address</label>
+                                    <input id="staffaddress" name="staffaddress" required="required" type="text" placeholder="Staff Address" />
+                                </p>                 
+                                 <p> 
+                                    <label for="gurdiansname" class="uname" data-icon="u">Guardian Name</label>
+                                    <input id="gurdiansname" name="gurdianname" required="required" type="text" placeholder="Guirdian's Name" />
+                                 </p>
+                                 <p> 
+                                    <label for="gurdiancontactnumber"data-icon="u">Gurdian Contact Number</label>
+                                    <input id="gurdiancontactnumber" name="gurdiancontactnumber" required="required" type="text" placeholder="Gurdian's Contact Number" />
+                                 </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                 </div>
+   
+  </div>
+<footer>
+  <div class="footerlink">
+    <p class="rf">Design by <a href=> kazi Nasim Zaman</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>
+     

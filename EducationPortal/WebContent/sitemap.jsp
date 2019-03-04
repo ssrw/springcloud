@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Student's Site | Sitemap</title>
+<title>Student's Site</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -18,7 +18,7 @@
 <![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
-<body id="page6">
+<body id="page1">
 <!-- START PAGE SOURCE -->
 <div class="wrap">
   <header>
@@ -26,11 +26,11 @@
       <h1><a href="#">Student's site</a></h1>
       <nav>
         <ul>
-          <li><a href="index.jsp" class="m1">Home Page</a></li>
+          <li class="current"><a href="index.jsp" class="m1">Home Page</a></li>
           <li><a href="about-us.jsp" class="m2">About Us</a></li>
           <li><a href="articles.jsp" class="m3">Our Articles</a></li>
           <li><a href="contact-us.jsp" class="m4">Contact Us</a></li>
-          <li class="last current"><a href="sitemap.jsp" class="m5">Sitemap</a></li>
+          <li class="last"><a href="sitemap.jsp" class="m5">Sitemap</a></li>
         </ul>
       </nav>
       <form action="#" id="search-form">
@@ -47,15 +47,14 @@
       <h3>Categories</h3>
       <ul class="categories">
         <li><span><a href="#">Programs</a></span></li>
-        <li><span><a href="#">Student Info</a></span></li>
-        <li><span><a href="#">Teachers</a></span></li>
-        <li><span><a href="#">Descriptions</a></span></li>
+        <li><span><a href="registration.jsp">Student Info</a></span></li>
+        <li><span><a href="#">Staff Management</a></span></li>
         <li><span><a href="#">Administrators</a></span></li>
         <li><span><a href="#">Basic Information</a></span></li>
         <li><span><a href="#">Vacancies</a></span></li>
         <li class="last"><span><a href="#">Calendar</a></span></li>
       </ul>
-      <form action="#" id="newsletter-form">
+     <form action="#" id="newsletter-form">
         <fieldset>
           <div class="rowElem">
             <h2>Newsletter</h2>
@@ -65,48 +64,22 @@
         </fieldset>
       </form>
       <h2>Fresh <span>News</span></h2>
-      <ul class="news">
-        <li><strong>June 30, 2010</strong>
-          <h4><a href="#">Sed ut perspiciatis unde</a></h4>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </li>
-        <li><strong>June 14, 2010</strong>
-          <h4><a href="#">Neque porro quisquam est</a></h4>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur magni. </li>
-        <li><strong>May 29, 2010</strong>
-          <h4><a href="#">Minima veniam, quis nostrum</a></h4>
-          Uis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae. </li>
-      </ul>
+          <h4><a href="#"></a></h4>
     </aside>
     <section id="content">
       <div id="banner">
-        <h2>Professional <span>Online Education <span>Since 1992</span></span></h2>
+        <h2>Professional <span>Education <span>Since 2009</span></span></h2>
       </div>
       <div class="inside">
-        <h2>Site <span>Map</span></h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-        <ul class="sitemap">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Articles</a>
-            <ul>
-              <li><a href="article.jsp">Article 1</a></li>
-              <li><a href="#">Article 2</a></li>
-              <li><a href="#">Article 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Site Map</a></li>
-        </ul>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-        <p class="p0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        <h2>About <span>Website</span></h2>
+        <div class="img-box"><img src="images/2page-img4.jpg"><span class="txt1"></span></div>
       </div>
     </section>
   </div>
 </div>
 <footer>
   <div class="footerlink">
-    <p class="lf">Copyright &copy; 2010 <a href="#">SiteName</a> - All Rights Reserved</p>
-    <p class="rf">Design by <a href="http://www.templatemonster.com/">TemplateMonster</a></p>
+    <p class="rf">Design by <a href=>Cazual</a></p>
     <div style="clear:both;"></div>
   </div>
 </footer>
@@ -114,3 +87,4 @@
 <!-- END PAGE SOURCE -->
 </body>
 </html>
+     
